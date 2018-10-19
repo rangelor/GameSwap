@@ -19,7 +19,8 @@ class WishlistViewController: UIViewController, UITableViewDelegate, UITableView
                 "Jacksonville, FL", "San Francisco, CA", "Columbus, OH", "Austin, TX",
                 "Memphis, TN", "Baltimore, MD", "Charlotte, ND", "Fort Worth, TX"]
     
-    var filteredData: [String]!
+    var filteredData = [String]()
+    var searching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,13 +34,22 @@ class WishlistViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cella", for: indexPath) as UITableViewCell
-        cell.textLabel?.text = filteredData[indexPath.row]
+        if searching {
+            cell.textLabel?.text = filteredData[indexPath.row]
+        } else{
+            cell.textLabel?.text = data[indexPath.row]
+        }
+        cell.textLabel?.textColor = .white ;
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredData.count
+        if searching{
+            return filteredData.count
+        }else {
+            return data.count
+        }
     }
     
     //    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
@@ -58,20 +68,24 @@ class WishlistViewController: UIViewController, UITableViewDelegate, UITableView
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        if !searchBar.text!.isEmpty{
-            // When there is no text, filteredData is the same as the original data
-            // When user has entered text into the search box
-            // Use the filter method to iterate over all items in the data array
-            // For each item, return true if the item should be included and false if the
-            // item should NOT be included
-            
-            filteredData = searchText.isEmpty ? data : data.filter({(dataString: String) -> Bool in
-                // If dataItem matches the searchText, return true to include it
-                return dataString.range(of: searchText, options: .caseInsensitive) != nil
-            })
-            
-            wishlistTable.reloadData()
-        }
+        filteredData = data.filter({$0.prefix(searchText.count) == searchText})
+        searching = true
+        wishlistTable.reloadData()
+        
+//        if !searchBar.text!.isEmpty{
+//            // When there is no text, filteredData is the same as the original data
+//            // When user has entered text into the search box
+//            // Use the filter method to iterate over all items in the data array
+//            // For each item, return true if the item should be included and false if the
+//            // item should NOT be included
+//
+//            filteredData = searchText.isEmpty ? data : data.filter({(dataString: String) -> Bool in
+//                // If dataItem matches the searchText, return true to include it
+//                return dataString.range(of: searchText, options: .caseInsensitive) != nil
+//            })
+//
+//            wishlistTable.reloadData()
+//        }
     }
     
 }
