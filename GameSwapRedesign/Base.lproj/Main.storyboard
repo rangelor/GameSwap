@@ -323,6 +323,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="cdK-l8-fte">
                             <color key="tintColor" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                            <connections>
+                                <segue destination="XHZ-LN-MTQ" kind="show" identifier="toAddGame" id="GP7-xc-7oM"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -333,6 +336,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOI-fd-gGw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3349.5999999999999" y="688.60569715142435"/>
+        </scene>
+        <!--AddA Game View Controller-->
+        <scene sceneID="Tx4-jb-237">
+            <objects>
+                <viewController id="XHZ-LN-MTQ" customClass="AddAGameViewController" customModule="GameSwapRedesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CC5-fL-a7o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYV-hS-e8C">
+                                <rect key="frame" x="16" y="71" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIy-uc-gqU">
+                                <rect key="frame" x="16" y="262" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="sendData:" destination="XHZ-LN-MTQ" eventType="touchUpInside" id="hTD-iD-UY0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert game name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rE-fL-8ce">
+                                <rect key="frame" x="16" y="42" width="143" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HO4-8q-CCl"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataTextField" destination="hYV-hS-e8C" id="tKN-L9-DoT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HGU-fW-wsK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4061.5999999999999" y="688.60569715142435"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="b1k-ZA-77z">
