@@ -20,6 +20,7 @@
 		9BB1ED73217A1BA40099206D /* GlacialIndifference-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BB1ED6F217A1BA30099206D /* GlacialIndifference-Bold.otf */; };
 		9BB1ED74217A1BA40099206D /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BB1ED70217A1BA40099206D /* Lato-Black.ttf */; };
 		9BB1ED75217A1BA40099206D /* GlacialIndifference-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BB1ED71217A1BA40099206D /* GlacialIndifference-Regular.otf */; };
+		9BB1ED79217A31E10099206D /* AddAGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED78217A31E10099206D /* AddAGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9BB1ED6F217A1BA30099206D /* GlacialIndifference-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GlacialIndifference-Bold.otf"; sourceTree = "<group>"; };
 		9BB1ED70217A1BA40099206D /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		9BB1ED71217A1BA40099206D /* GlacialIndifference-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GlacialIndifference-Regular.otf"; sourceTree = "<group>"; };
+		9BB1ED78217A31E10099206D /* AddAGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				9BB1ED71217A1BA40099206D /* GlacialIndifference-Regular.otf */,
 				9BB1ED70217A1BA40099206D /* Lato-Black.ttf */,
 				9BB1ED6E217A1BA30099206D /* Lato-Regular.ttf */,
+				9BB1ED78217A31E10099206D /* AddAGameViewController.swift */,
 			);
 			path = GameSwapRedesign;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				9BB1ED5F2178E6FC0099206D /* ProfileViewController.swift in Sources */,
 				9BB1ED5D2178E6F30099206D /* MessagesViewController.swift in Sources */,
 				9BB1ED592178E6CF0099206D /* WishlistViewController.swift in Sources */,
+				9BB1ED79217A31E10099206D /* AddAGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
