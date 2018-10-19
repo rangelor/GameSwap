@@ -8,12 +8,28 @@
 
 import UIKit
 
-class WishlistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class WishlistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, DataEnteredDelegate {
+    
+    
+    func userDidEnterInformation(info: String) {
+        data.append(info)
+        filteredData = data
+        wishlistTable.reloadData()
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toAddGame"{
+            let secondVC: AddAGameViewController = segue.destination as! AddAGameViewController
+            secondVC.delegate = self
+        }
+    }
+    
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var wishlistTable: UITableView!
     
-    let data = ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
+    var data = ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
                 "Philadelphia, PA", "Phoenix, AZ", "San Diego, CA", "San Antonio, TX",
                 "Dallas, TX", "Detroit, MI", "San Jose, CA", "Indianapolis, IN",
                 "Jacksonville, FL", "San Francisco, CA", "Columbus, OH", "Austin, TX",
