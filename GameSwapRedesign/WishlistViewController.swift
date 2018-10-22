@@ -29,11 +29,7 @@ class WishlistViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var wishlistTable: UITableView!
     
-    var data = ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
-                "Philadelphia, PA", "Phoenix, AZ", "San Diego, CA", "San Antonio, TX",
-                "Dallas, TX", "Detroit, MI", "San Jose, CA", "Indianapolis, IN",
-                "Jacksonville, FL", "San Francisco, CA", "Columbus, OH", "Austin, TX",
-                "Memphis, TN", "Baltimore, MD", "Charlotte, ND", "Fort Worth, TX"]
+    var data = ["Shrek 2", "Asphalt 9: Legends", "Minecraft", "Bugs Bunny: Lost in Time", "Madagascar", "Fortnite"]
     
     var filteredData = [String]()
     var searching = false
@@ -46,6 +42,8 @@ class WishlistViewController: UIViewController, UITableViewDelegate, UITableView
         wishlistTable.delegate = self
         
         filteredData = data
+        
+        wishlistTable.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
