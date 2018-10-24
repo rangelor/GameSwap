@@ -13,7 +13,6 @@
 		9BB1ED3D217789730099206D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB1ED3B217789730099206D /* LaunchScreen.storyboard */; };
 		9BB1ED592178E6CF0099206D /* WishlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED582178E6CF0099206D /* WishlistViewController.swift */; };
 		9BB1ED5B2178E6DA0099206D /* MyGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED5A2178E6DA0099206D /* MyGamesViewController.swift */; };
-		9BB1ED5D2178E6F30099206D /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED5C2178E6F30099206D /* MessagesViewController.swift */; };
 		9BB1ED5F2178E6FC0099206D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED5E2178E6FC0099206D /* ProfileViewController.swift */; };
 		9BB1ED61217A136C0099206D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED60217A136C0099206D /* LoginViewController.swift */; };
 		9BB1ED72217A1BA40099206D /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BB1ED6E217A1BA30099206D /* Lato-Regular.ttf */; };
@@ -21,6 +20,10 @@
 		9BB1ED74217A1BA40099206D /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BB1ED70217A1BA40099206D /* Lato-Black.ttf */; };
 		9BB1ED75217A1BA40099206D /* GlacialIndifference-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9BB1ED71217A1BA40099206D /* GlacialIndifference-Regular.otf */; };
 		9BB1ED79217A31E10099206D /* AddAGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED78217A31E10099206D /* AddAGameViewController.swift */; };
+		9BB1ED7B217DDF110099206D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED7A217DDF110099206D /* User.swift */; };
+		9BB1ED7D217DE2270099206D /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED7C217DE2270099206D /* UserTableViewCell.swift */; };
+		9BB1ED83217DFCEA0099206D /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED82217DFCEA0099206D /* MessagesTableViewController.swift */; };
+		9BB1ED85217E041C0099206D /* SuggestedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB1ED84217E041C0099206D /* SuggestedUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +35,6 @@
 		9BB1ED3E217789730099206D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BB1ED582178E6CF0099206D /* WishlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistViewController.swift; sourceTree = "<group>"; };
 		9BB1ED5A2178E6DA0099206D /* MyGamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGamesViewController.swift; sourceTree = "<group>"; };
-		9BB1ED5C2178E6F30099206D /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		9BB1ED5E2178E6FC0099206D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9BB1ED60217A136C0099206D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BB1ED6E217A1BA30099206D /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
@@ -40,6 +42,10 @@
 		9BB1ED70217A1BA40099206D /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		9BB1ED71217A1BA40099206D /* GlacialIndifference-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GlacialIndifference-Regular.otf"; sourceTree = "<group>"; };
 		9BB1ED78217A31E10099206D /* AddAGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAGameViewController.swift; sourceTree = "<group>"; };
+		9BB1ED7A217DDF110099206D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9BB1ED7C217DE2270099206D /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		9BB1ED82217DFCEA0099206D /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		9BB1ED84217E041C0099206D /* SuggestedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,11 @@
 				9BB1ED39217789730099206D /* Assets.xcassets */,
 				9BB1ED3B217789730099206D /* LaunchScreen.storyboard */,
 				9BB1ED3E217789730099206D /* Info.plist */,
+				9BB1ED82217DFCEA0099206D /* MessagesTableViewController.swift */,
 				9BB1ED582178E6CF0099206D /* WishlistViewController.swift */,
+				9BB1ED7A217DDF110099206D /* User.swift */,
+				9BB1ED7C217DE2270099206D /* UserTableViewCell.swift */,
 				9BB1ED5A2178E6DA0099206D /* MyGamesViewController.swift */,
-				9BB1ED5C2178E6F30099206D /* MessagesViewController.swift */,
 				9BB1ED5E2178E6FC0099206D /* ProfileViewController.swift */,
 				9BB1ED60217A136C0099206D /* LoginViewController.swift */,
 				9BB1ED6F217A1BA30099206D /* GlacialIndifference-Bold.otf */,
@@ -87,6 +95,7 @@
 				9BB1ED70217A1BA40099206D /* Lato-Black.ttf */,
 				9BB1ED6E217A1BA30099206D /* Lato-Regular.ttf */,
 				9BB1ED78217A31E10099206D /* AddAGameViewController.swift */,
+				9BB1ED84217E041C0099206D /* SuggestedUser.swift */,
 			);
 			path = GameSwapRedesign;
 			sourceTree = "<group>";
@@ -166,13 +175,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BB1ED85217E041C0099206D /* SuggestedUser.swift in Sources */,
 				9BB1ED61217A136C0099206D /* LoginViewController.swift in Sources */,
+				9BB1ED7D217DE2270099206D /* UserTableViewCell.swift in Sources */,
 				9BB1ED33217789720099206D /* AppDelegate.swift in Sources */,
 				9BB1ED5B2178E6DA0099206D /* MyGamesViewController.swift in Sources */,
 				9BB1ED5F2178E6FC0099206D /* ProfileViewController.swift in Sources */,
-				9BB1ED5D2178E6F30099206D /* MessagesViewController.swift in Sources */,
+				9BB1ED7B217DDF110099206D /* User.swift in Sources */,
 				9BB1ED592178E6CF0099206D /* WishlistViewController.swift in Sources */,
 				9BB1ED79217A31E10099206D /* AddAGameViewController.swift in Sources */,
+				9BB1ED83217DFCEA0099206D /* MessagesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
